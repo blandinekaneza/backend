@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mission_name: MyText
+  mission_id: MyText
+  wikipedia: MyText
+  website: MyText
+  twitter: MyText
+  description: MyText
+
+two:
+  mission_name: MyText
+  mission_id: MyText
+  wikipedia: MyText
+  website: MyText
+  twitter: MyText
+  description: MyText
