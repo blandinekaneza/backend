@@ -22,14 +22,11 @@ ActiveRecord::Schema.define(version: 2018_12_05_104226) do
     t.text "website"
     t.text "twitter"
     t.text "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "nationalities", force: :cascade do |t|
     t.text "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.index ["name"], name: "nationalities_name_key", unique: true
   end
 
   create_table "payloads", force: :cascade do |t|
@@ -42,8 +39,6 @@ ActiveRecord::Schema.define(version: 2018_12_05_104226) do
     t.text "orbit"
     t.bigint "mission_id"
     t.bigint "nationality_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.index ["mission_id"], name: "index_payloads_on_mission_id"
     t.index ["nationality_id"], name: "index_payloads_on_nationality_id"
   end
