@@ -7,11 +7,11 @@ rake db:migrate
 username: backend
 password: backend
 
-/fetch_data : I was not able to do this endpoint, if you could guide me how to do it! thank you!
+/fetch-data : return all the missions, payloads and nationalities
 
 /missions : return all the missions
 
-/missions/:id​​ ​​- return the mission with this id.
+/missions/:id​​ ​​- return the mission with this id
 e.g /missions/1 -> this returns the mission with id:1
 
 /missions/search​​ ​​- return all missions where a search term that the user submits is found in the missions description.

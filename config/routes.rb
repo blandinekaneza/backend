@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+	jsonapi_resources :fetch_data
 	jsonapi_resources :missions do
 		get 'search', on: :collection
 	end
